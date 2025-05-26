@@ -7,3 +7,37 @@
 .main {
   flex-grow: 1; /* يجعل المحتوى يأخذ المساحة المتاحة قبل الفوتر */
 }
+html,
+body {
+  overflow-x: hidden; /* يمنع التمرير الأفقي */
+}
+
+.container {
+  max-width: 100vw; /* يضمن عدم تجاوز العناصر عرض الشاشة */
+}
+
+* {
+  box-sizing: border-box; /* يمنع تجاوز الحدود بسبب الـ padding */
+}
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+html,
+body {
+  overflow-x: hidden; /* ✅ يمنع التمرير الأفقي */
+}
+
+.container {
+  max-width: 100vw; /* ✅ يضمن عدم تجاوز العناصر عرض الشاشة */
+}
+
+* {
+  box-sizing: border-box; /* ✅ يمنع تجاوز الحدود بسبب الـ padding */
+}
