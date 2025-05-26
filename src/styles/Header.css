@@ -430,3 +430,156 @@
   font-size: 1rem;
   padding-top: 2px; /* ✅ ضبط ارتفاع النص بجانب الأيقونات */
 }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80vw; /* ✅ يضمن عدم تمدد المحتوى بشكل زائد */
+    margin: auto;
+  }
+
+  .header,
+  .footer {
+    padding: 20px 40px; /* ✅ ضبط المسافات داخل الهيدر والفوتر */
+  }
+
+  .nav-links a {
+    font-size: 1.2rem; /* ✅ ضبط حجم الخط داخل القائمة */
+  }
+
+  .product-list {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    ); /* ✅ تحسين توزيع المنتجات */
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 1.2rem; /* ✅ تصغير حجم اللوجو */
+  }
+
+  .cart-container {
+    font-size: 1rem; /* ✅ ضبط حجم أيقونة عربة التسوق */
+  }
+
+  .nav-links {
+    display: none; /* ✅ إخفاء القائمة الافتراضية في الهواتف */
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 20px 40px; /* ✅ ضبط المسافات داخل الهيدر */
+  }
+
+  .logo {
+    font-size: 1.6rem; /* ✅ ضبط حجم اللوجو ليكون متناسقًا */
+  }
+
+  .cart-container {
+    font-size: 1.2rem; /* ✅ ضبط حجم أيقونة عربة التسوق */
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ff6b98;
+  margin-right: auto; /* ✅ يدفع اللوجو إلى اليسار ويترك مسافة للقائمة */
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px; /* ✅ زيادة المسافة بين الروابط */
+  list-style: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ff6b98;
+  margin-right: 40px; /* ✅ يضيف مسافة واضحة بين اللوجو والقائمة */
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px; /* ✅ زيادة المسافة بين الروابط */
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.4rem; /* ✅ تصغير حجم اللوجو */
+    margin-right: 20px; /* ✅ تقليل المسافة قليلاً على الهواتف */
+  }
+
+  .nav-links {
+    gap: 15px; /* ✅ ضبط المسافة بين الروابط */
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff6b98;
+}
+
+.nav-container {
+  display: flex;
+  flex-grow: 1; /* ✅ يسمح للقائمة بأخذ مساحة متوازنة */
+  justify-content: center; /* ✅ يجعل القائمة في المنتصف */
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.cart-container {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 1.2rem; /* ✅ تصغير حجم اللوجو */
+  }
+
+  .nav-container {
+    display: none; /* ✅ إخفاء القائمة الافتراضية في الهواتف */
+  }
+
+  .cart-container {
+    font-size: 1rem; /* ✅ تصغير حجم أيقونة عربة التسوق */
+  }
+}
