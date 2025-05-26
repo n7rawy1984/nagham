@@ -1,0 +1,42 @@
+.contact-us {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #fff0f5, #ffffff);
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  background: #ff6b98;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  margin: 10px;
+  color: #ff6b98;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}

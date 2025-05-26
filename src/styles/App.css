@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* يضمن أن الصفحة تمتد للعرض الكامل */
+}
+
+.main {
+  flex-grow: 1; /* يجعل المحتوى يأخذ المساحة المتاحة قبل الفوتر */
+}
